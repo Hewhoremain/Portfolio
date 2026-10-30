@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumit Bisht — Information Security Consultant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e8edf0; --surface:#f6f8f9; --ink:#12202b; --muted:#4d5f6c; --line:#c3cfd6; --accent:#b4540a; --accent-ink:#ffffff; --rail:#12202b;
+  --display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif; --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1a22; --surface:#16242e; --ink:#e6edf1; --muted:#98aab6; --line:#2a3d4a; --accent:#f0a35e; --accent-ink:#0f1a22; --rail:#e6edf1; color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0f1a22; --surface:#16242e; --ink:#e6edf1; --muted:#98aab6; --line:#2a3d4a; --accent:#f0a35e; --accent-ink:#0f1a22; --rail:#e6edf1; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-weight:500;font-size:15px}
+header.top nav{display:flex;gap:18px;flex-wrap:wrap}
+header.top a{text-decoration:none;color:var(--muted)}
+header.top a:hover{color:var(--ink)}
+.hero{padding:56px 0 48px}
+.hero h1{font:700 clamp(46px,11vw,96px)/.95 var(--display);letter-spacing:-.03em;margin:0 0 22px}
+.hero .role{font:500 clamp(20px,3.4vw,28px)/1.25 var(--display);margin:0 0 20px}
+.hero p.lead{max-width:60ch;color:var(--muted);margin:0 0 28px;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{filter:brightness(1.08)}
+h2{font:700 clamp(28px,5vw,38px)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 8px}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 28px;max-width:58ch}
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--rail);opacity:.85}
+.tl>li{position:relative;padding:0 0 38px 38px}
+.tl>li:last-child{padding-bottom:0}
+.tl>li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.tl>li.now::before{background:var(--accent)}
+.when{font-weight:600;font-size:14px;color:var(--accent);margin:0 0 2px}
+.tl h3{font:700 22px/1.25 var(--display);margin:0}
+.org{color:var(--muted);margin:2px 0 12px;font-size:15px}
+.tl ul{margin:0;padding-left:20px}
+.tl li li{margin:0 0 8px}
+.award{margin-top:12px;padding:10px 14px;background:var(--surface);border-left:4px solid var(--accent);font-size:15px}
+/* skills */
+.skills{display:grid;gap:26px}
+.skills h3{font:700 19px var(--display);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{background:var(--surface);border:1px solid var(--line);padding:5px 12px;border-radius:999px;font-size:14.5px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cert{background:var(--surface);border:1px solid var(--line);padding:14px 16px;border-radius:6px;font-weight:500}
+.edu strong{font:700 20px var(--display)}
+.contact a.big{font:700 clamp(22px,5vw,34px)/1.2 var(--display);word-break:break-all}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:22px 0 0}
+.contact dt{color:var(--muted)}
+.contact dd{margin:0}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (min-width:720px){.skills{grid-template-columns:1fr 1fr}.skills .wide{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span>Sumit Bisht</span>
+    <nav aria-label="Sections">
+      <a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Sumit Bisht</h1>
+      <p class="role">Information Security Consultant: digital forensics and incident response.</p>
+      <p class="lead">I reconstruct how attackers got in, what they touched, and how to shut them out. Over 4 years across SOC operations, threat hunting and DFIR, and now cyber response and security engineering for US and UK clients at KPMG US.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:sumitbisht2303@gmail.com">Email me</a>
+        <a class="btn" href="#experience">See my timeline</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>What I do</h2>
+      <p class="sub">Evidence first, then conclusions. My reports hold up because every finding traces back to an artifact.</p>
+      <p>I run forensic investigations end to end: imaging, memory and disk analysis, malware analysis, root cause analysis and log correlation. I also build the defenses that follow: detection engineering, SOAR playbooks, endpoint hardening and security tool integration across SIEM, EDR and NDR platforms.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Career timeline</h2>
+      <p class="sub">Newest first, like reading an incident log backwards.</p>
+      <ol class="tl">
+        <li class="now">
+          <p class="when">Sep 2026 – Present</p>
+          <h3>Cyber Security Consultant</h3>
+          <p class="org">KPMG US</p>
+          <ul>
+            <li>Deliver cyber response engagements for US and UK clients: investigation, root cause analysis, containment and remediation guidance.</li>
+            <li>Assess client environments for security gaps across endpoint, identity, network and cloud, and recommend prioritized fixes.</li>
+            <li>Planned and ran tabletop exercises, then presented findings to internal audit and compliance teams to strengthen IR readiness.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="when">Apr 2025 – Aug 2026</p>
+          <h3>Incident Responder (DFIR)</h3>
+          <p class="org">Esecforte, Gurugram, India</p>
+          <ul>
+            <li>Led DFIR investigations for 25+ complex incidents including ransomware, APT intrusions, malware and data exfiltration, reconstructing attack timelines from forensic images, memory, disk artifacts and logs.</li>
+            <li>Acquired and analyzed evidence with Magnet Forensics and FTK Imager. Used Binalyze AIR to collect artifacts remotely during live incidents, so triage started without on-site access.</li>
+            <li>Analyzed malware and PUPs statically and behaviorally in Remnux and FLARE-VM to establish functionality, persistence and IOCs.</li>
+            <li>Delivered formal DFIR reports covering evidentiary timelines, attack vector, persistence, lateral movement, security gaps and remediation, with 95% client satisfaction.</li>
+            <li>Hunted threats across endpoint, network, application and AD telemetry in Splunk and CrowdStrike, finding 15+ previously undetected threats.</li>
+            <li>Led Active Directory security assessments, privilege analysis, cyber drills and tabletop exercises for 5+ enterprise clients. Built and automated SOAR playbooks for incident response and evidence handling.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="when">Jun 2022 – Mar 2025</p>
+          <h3>SOC Analyst, L2</h3>
+          <p class="org">Wipro, Remote (UK clients)</p>
+          <ul>
+            <li>Led L2 operations in a 24/7 SOC, triaging and resolving 50+ alerts a week with Splunk, KQL, Microsoft Defender for Endpoint and Vectra NDR.</li>
+            <li>Integrated SIEM, Defender for Endpoint and Vectra NDR into client environments, and wrote HLD and LLD documents that extended detection coverage and streamlined SOC workflows.</li>
+            <li>Designed endpoint controls (ASR rules, EDR policies, DLP, hardening baselines) that improved detection coverage by 30%.</li>
+            <li>Ran IOC-driven hunts on hashes, IPs, domains and behaviors to find malware, lateral movement and persistence.</li>
+            <li>Owned the vulnerability management lifecycle with Defender VM and Nessus: CVE prioritization, patching and remediation validation, cutting risk exposure by about 80%.</li>
+          </ul>
+          <div class="award">Awards at Wipro: Habit Flagger (proactive risk identification) and Team Collaboration (cross-functional IR).</div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills and tools</h2>
+      <p class="sub">What I use most often, grouped by the work it supports.</p>
+      <div class="skills">
+        <div>
+          <h3>Forensics and response</h3>
+          <ul class="chips"><li>DFIR</li><li>Forensic imaging</li><li>Artifact analysis</li><li>Root cause analysis</li><li>Malware analysis</li><li>Threat hunting</li><li>Phishing analysis</li><li>Detection engineering</li><li>SOAR playbooks</li><li>MITRE ATT&amp;CK</li></ul>
+        </div>
+        <div>
+          <h3>Security engineering</h3>
+          <ul class="chips"><li>Security gap assessments</li><li>Vulnerability management</li><li>Tool integration</li><li>HLD / LLD design</li><li>Endpoint hardening</li><li>Active Directory security</li><li>Azure and AWS security</li><li>Tabletop exercises</li></ul>
+        </div>
+        <div class="wide">
+          <h3>Platforms and tools</h3>
+          <ul class="chips"><li>Splunk</li><li>KQL</li><li>Microsoft Defender for Endpoint</li><li>CrowdStrike</li><li>Vectra NDR</li><li>SentinelOne</li><li>CyberReason</li><li>Magnet Forensics</li><li>FTK Imager</li><li>Binalyze AIR</li><li>Remnux</li><li>FLARE-VM</li><li>Nessus</li><li>Qualys</li><li>CyberArk EPM</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <h2>Certifications and education</h2>
+      <p class="sub">&nbsp;</p>
+      <div class="grid">
+        <div class="cert">13Cubed Windows Forensics: Endpoints</div>
+        <div class="cert">SentinelOne IR Engineer (SIREN)</div>
+        <div class="cert">Microsoft Azure Fundamentals (AZ-900)</div>
+        <div class="cert">CyberArk Endpoint Privilege Manager</div>
+        <div class="cert">Vectra NDR (Blue Team)</div>
+        <div class="cert">CyberReason EDR</div>
+        <div class="cert">Qualys Vulnerability Management</div>
+        <div class="cert">Cisco Junior Cybersecurity Analyst</div>
+      </div>
+      <p class="edu" style="margin-top:28px"><strong>Bachelor of Computer Applications</strong><br>MJPRU University, Aug 2019 – Aug 2022</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p class="sub">For incident response, security assessments or a conversation about the work.</p>
+      <a class="big" href="mailto:sumitbisht2303@gmail.com">sumitbisht2303@gmail.com</a>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+917536027144">+91 75360 27144</a></dd>
+        <dt>Location</dt><dd>Gurugram, India</dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/sumit-bisht-30682b219">View profile</a></dd>
+      </dl>
+    </section>
+  </main>
+  <footer>© 2026 Sumit Bisht</footer>
+</div>
+</body>
+</html>
